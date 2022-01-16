@@ -1,5 +1,9 @@
 **API mocking using EC2 instance**
 
+URL to check the apimocking: http://18.204.216.147:7878/data/2.5/weather
+
+*This URL works only when the apimocking is running the EC2 instance terminal* 
+
 ![](https://miro.medium.com/max/287/0*at6076vHFC6hPbP0.jpg)
 
 The following steps will guide you through the process of apimocking in an EC2 instance of AWS
