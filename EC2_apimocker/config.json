@@ -1,6 +1,6 @@
 {
   "note": "This is a sample config file. You should change the mockDirectory to a more reasonable path.",
-  "mockDirectory": "/Users/pavan/Desktop/CS561/assignment2/",
+  "mockDirectory": "/home/ec2-user/assignment2CS-561-Software-Engineering-Methods/EC2_apimocker/",
   "quiet": false,
   "port": "7878",
   "logRequestHeaders": false,
