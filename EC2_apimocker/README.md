@@ -8,22 +8,46 @@ The following steps will guide you through the process of apimocking in an EC2 i
 
 1. Create a new EC2 instance in your AWS with any specifications of your choice
 2. Now, connect the EC2 instance once it's in the running state. You can connect via ssh or other options you like.
-3. Install node and apimocker along with git which will aid you in cloning the repository
-    - use command ```sudo yum install git -y``` to install git
-    - follow this [link](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-up-node-on-ec2-instance.html) to install node
-    - use command ```npm install -g apimocker``` to install apimocker.
-5. Use git clone to clone your repository into your desired directory
-6. Now, go to the ```config.json``` file and edit mockdirectory path to your pwd path and save it
-7. Finally, run the command ```apimocker -c config.json```
-8. Now, open other terminal from EC2 instance and run the command ```curl "your url"```
+
+3. Install the following:
+
+   - Install git 
+            
+            sudo yum install git -y
+   - Setup Node
+        > Install nvm
+                
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+        > Activate nvm
+        
+            . ~/.nvm/nvm.sh
+        > Install node
+        
+            nvm install node
+            
+    - Install apimocker
+        
+            npm install -g apimocker
+            
+4. Use git clone to clone your repository into your desired directory
+5. Now, go to the `config.json` file and edit mockdirectory path to your pwd path and save it
+6. Finally, run the command 
+    
+            apimocker -c config.json
+7. Now, open other terminal from EC2 instance and run the command ```curl "your url"```
 
 Finally, it displays the information of the weather at corvallis and verfies that the api is successfully mocked.
 
-*Use pm2 to keep you app live all the time:*
-
-```npm install pm2```
-
-```pm2 start app.js```
+*Follow the below steps to keep your app live all the time:*
+1. Install express 
+        
+        npm install express --save
+2. Install pm2 
+        
+        npm install pm2
+3. Start app.js
+        
+        pm2 start app.js
 
 
 
