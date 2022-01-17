@@ -19,6 +19,13 @@ The following steps will guide you through the process of apimocking in an EC2 i
 7. Finally, run the command ```apimocker -c config.json```
 8. Now, open other terminal from EC2 instance and run the command ```curl "your url"```
 
-FInally, it displays the information of the weather at corvallis and verfies that the api is successfully mocked.
+Finally, it displays the information of the weather at corvallis and verfies that the api is successfully mocked.
+
+*Use pm2 to keep you app live all the time:*
+
+```npm install pm2```
+
+```pm2 start app.js```
+
 
 
