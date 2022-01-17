@@ -13,7 +13,7 @@ The following steps will guide you through the process of apimocking in an EC2 i
 3. Install node and apimocker along with git which will aid you in cloning the repository
     - use command ```sudo yum install git -y``` to install git
     - follow this [link](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-up-node-on-ec2-instance.html) to install node
-    - use command ```sudo npm install -g apimocker``` to install apimocker.
+    - use command ```npm install -g apimocker``` to install apimocker.
 5. Use git clone to clone your repository into your desired directory
 6. Now, go to the ```config.json``` file and edit mockdirectory path to your pwd path and save it
 7. Finally, run the command ```apimocker -c config.json```
